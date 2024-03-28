@@ -6,7 +6,7 @@ export default async function SendWhatsAppMessage(){
     const handleOnClick = async () => {
         console.log('sending message')
         const url = '/api/whatsapp/send/welcome'
-        const payload = {to: '919413435367'}
+        const payload = {to: '919971456988'}
         const response = await post(url, payload);
     }
     return (

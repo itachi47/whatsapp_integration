@@ -32,7 +32,7 @@ export async function POST(request) {
             // send the data on the requested callback
             if (message?.type === 'interactive') {
                 postFormFlowData(message);
-            } else if (message?.type === 'button') {
+            } else {
                 post(`${process.env.BASE_URL}/api/whatsapp/send/form_flow`, {
                     to: from,
                     body: "Hi, test we are here to help you with converting the link in the pdf data, click on the get started and provide some basic details, and let the magic happen",
